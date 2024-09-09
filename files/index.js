@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const { exec, execSync } = require('child_process');
-const port = process.env.SERVER_PORT || process.env.PORT || 50210;        
+const port = process.env.SERVER_PORT || process.env.PORT || 5020;        
 const UUID = process.env.UUID || '8838401c-a00e-43d0-8ccd-78eaae36f496'; //若需要改UUID，需要在config.json里改为一致
 const NEZHA_SERVER = process.env.NEZHA_SERVER || 'nz.f4i.cn';     
 const NEZHA_PORT = process.env.NEZHA_PORT || '5555';                     // 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一开启tls
